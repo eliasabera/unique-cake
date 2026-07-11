@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse all cakes at Unique Cake House — birthday, wedding, graduation, anniversary, and custom cakes crafted fresh in Jimma." />
+    <title>Products - Unique Cake House</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/products.css" />
+</head>
+<body>
+
+    <!-- ============================================================
+    HEADER / NAVIGATION
+    ============================================================ -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/icons/logo.png" alt="Unique Cake House Logo" />
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="showrooms.html">Showrooms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================================
+    MAIN CONTENT
+    ============================================================ -->
+    <main>
+
+        <!-- ============================================================
+        PAGE HERO
+        ============================================================ -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="section-tag">Our Collection</span>
+                    <h1 class="page-hero-title">All Products</h1>
+                    <p class="page-hero-subtitle">
+                        Freshly baked celebration cakes for every occasion — browse our full collection.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        PRODUCTS SECTION
+        ============================================================ -->
+        <section class="products-section">
+            <div class="container">
+
+                <!-- Filter Bar -->
+                <div class="filter-bar reveal">
+                    <button class="filter-btn filter-active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="birthday">Birthday</button>
+                    <button class="filter-btn" data-filter="wedding">Wedding</button>
+                    <button class="filter-btn" data-filter="graduation">Graduation</button>
+                    <button class="filter-btn" data-filter="anniversary">Anniversary</button>
+                    <button class="filter-btn" data-filter="custom">Custom</button>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid reveal reveal-stagger">
+
+                    <!-- Product 1 -->
+                    <div class="cake-card" data-category="birthday">
+                        <div class="cake-image">
+                            <img src="images/cakes/images.jpg" alt="Chocolate Fudge Delight" />
+                            <span class="cake-badge">Bestseller</span>
+                        </div>
+                        <div class="cake-info">
+                            <h3 class="cake-name">Chocolate Fudge Delight</h3>
+                            <div class="cake-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(48 reviews)</span>
+                            </div>
+                            <p class="cake-price">ETB 1,500</p>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="cake-card" data-category="wedding">
+                        <div class="cake-image">
+                            <img src="images/cakes/images1.jpg" alt="Elegant White Wedding" />
+                        </div>
+                        <div class="cake-info">
+                            <h3 class="cake-name">Elegant White Wedding</h3>
+                            <div class="cake-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(32 reviews)</span>
+                            </div>
+                            <p class="cake-price">ETB 2,500</p>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="cake-card" data-category="graduation">
+                        <div class="cake-image">
+                            <img src="images/cakes/RIS02123.JPG" alt="Graduation Celebration" />
+                            <span class="cake-badge">New</span>
+                        </div>
+                        <div class="cake-info">
+                            <h3 class="cake-name">Graduation Celebration</h3>
+                            <div class="cake-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(25 reviews)</span>
+                            </div>
+                            <p class="cake-price">ETB 1,800</p>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="cake-card" data-category="anniversary">
+                        <div class="cake-image">
+                            <img src="images/cakes/images (1).jpg" alt="Golden Anniversary" />
+                        </div>
+                        <div class="cake-info">
+                            <h3 class="cake-name">Golden Anniversary</h3>
+                            <div class="cake-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(18 reviews)</span>
+                            </div>
+                            <p class="cake-price">ETB 2,000</p>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="cake-card" data-category="birthday">
+                        <div class="cake-image">
+                            <img src="images/cakes/unnamed.png" alt="Classic Vanilla Dream" />
+                            <span class="cake-badge">Popular</span>
+                        </div>
+                        <div class="cake-info">
+                            <h3 class="cake-name">Classic Vanilla Dream</h3>
+                            <div class="cake-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(56 reviews)</span>
+                            </div>
+                            <p class="cake-price">ETB 1,200</p>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="cake-card" data-category="custom">
+                        <div class="cake-image">
+                            <img src="images/cakes/images (2).jpg" alt="Strawberry Rose Garden" />
+                        </div>
+                        <div class="cake-info">
+                            <h3 class="cake-name">Strawberry Rose Garden</h3>
+                            <div class="cake-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(22 reviews)</span>
+                            </div>
+                            <p class="cake-price">ETB 1,600</p>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="cake-card" data-category="custom">
+                        <div class="cake-image">
+                            <img src="images/cakes/images (3).jpg" alt="Tropical Mango Bliss" />
+                            <span class="cake-badge">New</span>
+                        </div>
+                        <div class="cake-info">
+                            <h3 class="cake-name">Tropical Mango Bliss</h3>
+                            <div class="cake-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(15 reviews)</span>
+                            </div>
+                            <p class="cake-price">ETB 1,400</p>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="cake-card" data-category="wedding">
+                        <div class="cake-image">
+                            <img src="images/cakes/images (4).jpg" alt="Royal Chocolate Tower" />
+                            <span class="cake-badge">Premium</span>
+                        </div>
+                        <div class="cake-info">
+                            <h3 class="cake-name">Royal Chocolate Tower</h3>
+                            <div class="cake-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(40 reviews)</span>
+                            </div>
+                            <p class="cake-price">ETB 3,500</p>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Load More -->
+                <div class="section-footer">
+                    <a href="#" class="btn btn-secondary">Load More Cakes</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+        WHY ORDER FROM US
+        ============================================================ -->
+        <section class="why-order">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Why Order From Us</span>
+                    <h2 class="section-title">The Unique Difference</h2>
+                </div>
+
+                <div class="why-grid reveal reveal-stagger">
+                    <!-- Feature 1 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Fast Delivery</h3>
+                        <p>
+                            Same-day delivery available for orders placed before 10 AM.
+                            Your cake arrives fresh and on time, every time.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>
+                            We use only the finest, freshest ingredients sourced locally
+                            and internationally for every cake we create.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>100% Satisfaction</h3>
+                        <p>
+                            Not happy with your order? We'll make it right or give you a
+                            full refund. Your joy is our priority.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CTA SECTION
+        ============================================================ -->
+        <section class="products-cta">
+            <div class="container">
+                <div class="cta-wrapper reveal">
+                    <div class="cta-content">
+                        <h2>Can't Find What You're Looking For?</h2>
+                        <p>
+                            We specialize in custom creations. Tell us your vision and we'll
+                            bring it to life — any size, flavor, or design.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="services.html" class="btn btn-primary">Custom Order</a>
+                            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid reveal reveal-stagger">
+                <!-- Column 1: Brand -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="images/icons/logo.png" alt="Unique Cake House" />
+                        <span>Unique Cake House</span>
+                    </div>
+                    <p class="footer-description">
+                        Jimma's premier destination for custom celebration cakes.
+                        From our family to yours.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="showrooms.html">Showrooms</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:uniquecakehouse331@gmail.com">uniquecakehouse331@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+251975154221">+251 975 154 221</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+251907180023">+251 907 180 023</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>ጅማ ቆጪ ማረሚያ ታክሲ ተራ ፊት ለፊት</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Hours -->
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li><span>Monday - Saturday:</span> 8:00 AM - 8:00 PM</li>
+                        <li><span>Sunday:</span> Closed</li>
+                        <li class="footer-note">Order 48 hours in advance for custom cakes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Unique Cake House. Crafted with love in Jimma.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> &bull;
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+
+    <!-- Filter functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.cake-card[data-category]');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('filter-active'));
+                    btn.classList.add('filter-active');
+
+                    const filter = btn.dataset.filter;
+
+                    cards.forEach(card => {
+                        if (filter === 'all' || card.dataset.category === filter) {
+                            card.style.display = '';
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            requestAnimationFrame(() => {
+                                card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            });
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => { card.style.display = 'none'; }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

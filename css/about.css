@@ -1,0 +1,678 @@
+/* ============================================================
+   ABOUT.CSS — Unique Cake House
+   About page-specific styles only.
+   Global styles are loaded via global.css linked in HTML before this file.
+   ============================================================ */
+
+/* --- Page Hero / Banner --- */
+.page-hero {
+    padding: 160px 0 80px;
+    background: var(--bg-ivory);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: rgba(246, 108, 103, 0.04);
+    pointer-events: none;
+}
+
+.page-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(194, 160, 145, 0.04);
+    pointer-events: none;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero-title {
+    font-family: var(--font-serif);
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.page-hero-subtitle {
+    font-size: 18px;
+    color: var(--accent-caramel);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* --- Our Story Section --- */
+.our-story {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-image {
+    position: relative;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 450px;
+}
+
+.story-image-badge {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-dark);
+}
+
+.story-content .section-tag {
+    text-align: left;
+}
+
+.story-content .section-tag::after {
+    margin: 8px 0 0;
+}
+
+.story-content .section-title {
+    text-align: left;
+}
+
+.story-text {
+    font-size: 16px;
+    color: var(--accent-caramel);
+    margin-bottom: 18px;
+    line-height: 1.9;
+}
+
+.story-text strong {
+    color: var(--text-dark);
+}
+
+.story-signature {
+    margin-top: 30px;
+}
+
+.story-signature img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 8px;
+    opacity: 0.7;
+}
+
+.story-signature p {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    color: var(--text-dark);
+    font-style: italic;
+}
+
+/* --- Mission & Values Section --- */
+.mission-values {
+    padding: var(--section-padding);
+    background: var(--bg-ivory);
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.mission-card {
+    background: var(--white);
+    padding: 36px 28px;
+    border-radius: var(--card-radius);
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    transition: all var(--transition-smooth);
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.mission-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: var(--bg-ivory);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: var(--cta-coral);
+    transition: all var(--transition-smooth);
+}
+
+.mission-card:hover .mission-icon {
+    background: var(--cta-coral);
+    color: var(--white);
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.mission-card h3 {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.mission-card p {
+    font-size: 15px;
+    color: var(--accent-caramel);
+    line-height: 1.8;
+}
+
+/* --- Meet The Team Section --- */
+.meet-team {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background: var(--bg-ivory);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: all var(--transition-smooth);
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%;
+    background: var(--white);
+}
+
+.team-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-smooth);
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.08);
+}
+
+.team-social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    opacity: 0;
+    transition: all var(--transition-smooth);
+}
+
+.team-card:hover .team-social {
+    opacity: 1;
+}
+
+.team-social a {
+    width: 36px;
+    height: 36px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark);
+    font-size: 14px;
+    transition: all var(--transition-smooth);
+}
+
+.team-social a:hover {
+    background: var(--cta-coral);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.team-info {
+    padding: 20px 24px 24px;
+    text-align: center;
+}
+
+.team-info h3 {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.team-info span {
+    font-size: 14px;
+    color: var(--cta-coral);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.team-info p {
+    font-size: 15px;
+    color: var(--accent-caramel);
+    line-height: 1.8;
+}
+
+/* --- Our Bakery Section --- */
+.our-bakery {
+    padding: var(--section-padding);
+    background: var(--bg-ivory);
+}
+
+.bakery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.bakery-content .section-tag {
+    text-align: left;
+}
+
+.bakery-content .section-tag::after {
+    margin: 8px 0 0;
+}
+
+.bakery-content .section-title {
+    text-align: left;
+}
+
+.bakery-text {
+    font-size: 16px;
+    color: var(--accent-caramel);
+    margin-bottom: 18px;
+    line-height: 1.9;
+}
+
+.bakery-features {
+    margin: 24px 0 32px;
+}
+
+.bakery-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--accent-caramel);
+    margin-bottom: 10px;
+}
+
+.bakery-features li i {
+    color: var(--cta-coral);
+    font-size: 18px;
+}
+
+.bakery-image {
+    position: relative;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+}
+
+.bakery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.bakery-image-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--white);
+    padding: 10px 18px;
+    border-radius: var(--btn-radius);
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.bakery-image-badge i {
+    color: var(--cta-coral);
+}
+
+/* --- Timeline Section --- */
+.timeline {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.timeline-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-grid::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent-caramel);
+    transform: translateX(-50%);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    text-align: left;
+}
+
+.timeline-item:nth-child(even) {
+    direction: rtl;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    direction: ltr;
+}
+
+.timeline-year {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--cta-coral);
+    text-align: center;
+    position: relative;
+}
+
+.timeline-year::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--cta-coral);
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    box-shadow: var(--shadow-soft);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-content h3 {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.timeline-content p {
+    font-size: 15px;
+    color: var(--accent-caramel);
+    line-height: 1.8;
+}
+
+/* --- About CTA Section --- */
+.about-cta {
+    padding: var(--section-padding);
+    background: var(--bg-ivory);
+}
+
+.cta-wrapper {
+    background: var(--text-dark);
+    padding: 60px 40px;
+    border-radius: var(--card-radius);
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+}
+
+.cta-content h2 {
+    font-family: var(--font-serif);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.cta-content p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 550px;
+    margin: 0 auto 32px;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn-secondary {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--white);
+}
+
+/* ============================================================
+   RESPONSIVE: ABOUT PAGE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+    .story-grid {
+        gap: 40px;
+    }
+    
+    .bakery-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero-title {
+        font-size: 38px;
+    }
+    
+    .page-hero {
+        padding: 120px 0 60px;
+    }
+    
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .story-image img {
+        min-height: 300px;
+    }
+    
+    .bakery-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .bakery-image img {
+        min-height: 300px;
+    }
+    
+    .timeline-grid::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding-left: 50px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content {
+        text-align: left;
+    }
+    
+    .timeline-item:nth-child(even) {
+        direction: ltr;
+    }
+    
+    .timeline-year {
+        text-align: left;
+        font-size: 22px;
+    }
+    
+    .timeline-year::after {
+        left: -38px;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .mission-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    
+    .cta-wrapper {
+        padding: 40px 20px;
+    }
+    
+    .cta-content h2 {
+        font-size: 28px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .story-image-badge {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .bakery-image-badge {
+        top: 12px;
+        right: 12px;
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero-title {
+        font-size: 30px;
+    }
+    
+    .page-hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        padding-left: 40px;
+    }
+    
+    .timeline-year::after {
+        left: -32px;
+        width: 12px;
+        height: 12px;
+    }
+    
+    .cta-content h2 {
+        font-size: 24px;
+    }
+}

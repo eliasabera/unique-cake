@@ -1,0 +1,825 @@
+/* ============================================================
+   INDEX.CSS — Unique Cake House
+   Homepage-specific styles only.
+   Global styles are loaded via global.css linked in HTML before this file.
+   ============================================================ */
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    background: var(--bg-ivory);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    background: var(--white);
+    border-radius: var(--btn-radius);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent-caramel);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-soft);
+}
+
+.hero-title {
+    font-family: var(--font-serif);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.hero-title span {
+    color: var(--cta-coral);
+}
+
+.hero-description {
+    font-size: 18px;
+    color: var(--accent-caramel);
+    max-width: 500px;
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+/* --- Floating Featured Cake Card --- */
+.hero-featured-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--white);
+    padding: 12px 20px 12px 12px;
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    max-width: 280px;
+    transition: all var(--transition-smooth);
+}
+
+.hero-featured-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.hero-featured-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.featured-card-info h4 {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.featured-card-info .price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cta-coral);
+    margin: 2px 0 6px;
+}
+
+/* --- Hero Image (arch container) --- */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    aspect-ratio: 1 / 1.2;
+    border-radius: 200px 200px 100px 100px;
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+    background: var(--white);
+}
+
+.hero-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================================================
+   FEATURED CAKES SECTION
+   ============================================================ */
+.featured-cakes {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.cakes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.cake-card {
+    background: var(--white);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: all var(--transition-smooth);
+}
+
+.cake-card:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-hover);
+}
+
+.cake-image {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%;
+    background: var(--bg-ivory);
+}
+
+.cake-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-smooth);
+}
+
+.cake-card:hover .cake-image img {
+    transform: scale(1.08);
+}
+
+.cake-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 4px 14px;
+    background: var(--cta-coral);
+    color: var(--white);
+    border-radius: var(--btn-radius);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cake-badge:first-child {
+    background: var(--gold);
+}
+
+.cake-info {
+    padding: 20px 24px 24px;
+}
+
+.cake-name {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.cake-rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+
+.cake-rating span {
+    color: var(--accent-caramel);
+    font-size: 13px;
+    margin-left: 6px;
+}
+
+.cake-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cta-coral);
+    margin-bottom: 16px;
+}
+
+/* ============================================================
+   CATEGORIES SECTION
+   ============================================================ */
+.categories {
+    padding: var(--section-padding);
+    background: var(--bg-ivory);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    display: block;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    box-shadow: var(--shadow-soft);
+    transition: all var(--transition-smooth);
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.category-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    color: var(--white);
+    transition: all var(--transition-smooth);
+}
+
+.category-card:hover .category-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.category-overlay h3 {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.category-overlay span {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* ============================================================
+   ABOUT PREVIEW SECTION
+   ============================================================ */
+.about-preview {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.about-image-badge {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-soft);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.about-content .section-tag {
+    text-align: left;
+}
+
+.about-content .section-tag::after {
+    margin: 8px 0 0;
+}
+
+.about-content .section-title {
+    text-align: left;
+}
+
+.about-text {
+    font-size: 16px;
+    color: var(--accent-caramel);
+    margin-bottom: 16px;
+    line-height: 1.9;
+}
+
+.about-text strong {
+    color: var(--text-dark);
+}
+
+.about-stats {
+    display: flex;
+    gap: 40px;
+    margin: 32px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cta-coral);
+}
+
+.stat-label {
+    font-size: 14px;
+    color: var(--accent-caramel);
+}
+
+/* ============================================================
+   WHY CHOOSE US SECTION
+   ============================================================ */
+.why-choose-us {
+    padding: var(--section-padding);
+    background: var(--bg-ivory);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 36px 28px;
+    border-radius: var(--card-radius);
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    transition: all var(--transition-smooth);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: var(--bg-ivory);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: var(--cta-coral);
+    transition: all var(--transition-smooth);
+}
+
+.feature-card:hover .feature-icon {
+    background: var(--cta-coral);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.feature-card h3 {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: var(--accent-caramel);
+    line-height: 1.8;
+}
+
+/* ============================================================
+   TESTIMONIALS SECTION
+   ============================================================ */
+.testimonials {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: var(--bg-ivory);
+    padding: 32px 28px;
+    border-radius: var(--card-radius);
+    transition: all var(--transition-smooth);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium);
+}
+
+.testimonial-rating {
+    color: var(--gold);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-author h4 {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.testimonial-author span {
+    font-size: 13px;
+    color: var(--accent-caramel);
+}
+
+/* ============================================================
+   INSTAGRAM GALLERY SECTION
+   ============================================================ */
+.instagram-gallery {
+    padding: var(--section-padding);
+    background: var(--bg-ivory);
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.instagram-item {
+    position: relative;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    background: var(--white);
+    box-shadow: var(--shadow-soft);
+    transition: all var(--transition-smooth);
+}
+
+.instagram-item:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-hover);
+}
+
+.instagram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-smooth);
+}
+
+.instagram-item:hover img {
+    transform: scale(1.1);
+}
+
+.instagram-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(106, 86, 72, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    opacity: 0;
+    transition: all var(--transition-smooth);
+    gap: 8px;
+}
+
+.instagram-item:hover .instagram-overlay {
+    opacity: 1;
+}
+
+.instagram-overlay i {
+    font-size: 36px;
+}
+
+.instagram-overlay span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ============================================================
+   NEWSLETTER SECTION
+   ============================================================ */
+.newsletter {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.newsletter-wrapper {
+    background: var(--bg-ivory);
+    padding: 60px 40px;
+    border-radius: var(--card-radius);
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.newsletter-content .section-title {
+    margin-bottom: 12px;
+}
+
+.newsletter-text {
+    font-size: 17px;
+    color: var(--accent-caramel);
+    max-width: 550px;
+    margin: 0 auto 32px;
+    line-height: 1.8;
+}
+
+.newsletter-form .form-group {
+    display: flex;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 2px solid transparent;
+    border-radius: var(--btn-radius);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    background: var(--white);
+    color: var(--text-dark);
+    transition: all var(--transition-smooth);
+    outline: none;
+}
+
+.newsletter-form input:focus {
+    border-color: var(--cta-coral);
+    box-shadow: 0 0 0 4px rgba(246, 108, 103, 0.1);
+}
+
+.newsletter-form input::placeholder {
+    color: var(--accent-caramel);
+}
+
+.newsletter-form .btn {
+    flex-shrink: 0;
+}
+
+.form-note {
+    font-size: 13px;
+    color: var(--accent-caramel);
+    margin-top: 16px;
+}
+
+.form-note i {
+    margin-right: 6px;
+}
+
+/* ============================================================
+   RESPONSIVE — HOMEPAGE SPECIFIC
+   ============================================================ */
+
+/* --- Tablets --- */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .about-grid {
+        gap: 40px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+    /* Hero */
+    .hero {
+        padding: 100px 0 60px;
+        min-height: auto;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-featured-card {
+        max-width: 100%;
+    }
+
+    .hero-image-wrapper {
+        max-width: 100%;
+        border-radius: 100px 100px 50px 50px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image img {
+        min-height: 300px;
+    }
+
+    .about-stats {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .stat-number {
+        font-size: 26px;
+    }
+
+    /* Categories */
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Cakes Grid */
+    .cakes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Instagram */
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    /* Newsletter */
+    .newsletter-wrapper {
+        padding: 40px 20px;
+    }
+
+    .newsletter-form .form-group {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form .btn {
+        width: 100%;
+    }
+}
+
+/* --- Mobile Small --- */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .cakes-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .cake-info {
+        padding: 14px 16px 18px;
+    }
+
+    .cake-name {
+        font-size: 16px;
+    }
+
+    .cake-price {
+        font-size: 16px;
+    }
+
+    .feature-card {
+        padding: 24px 20px;
+    }
+
+    .about-image-badge {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
