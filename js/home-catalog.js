@@ -14,9 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   CakeCatalog.getCatalogData().then(({ categories, products }) => {
     const featuredProducts = products.filter((product) => product.isFeatured);
+    const displayProducts =
+      featuredProducts.length > 0 ? featuredProducts : products.slice(0, 4);
 
     if (featuredGrid) {
-      featuredGrid.innerHTML = featuredProducts
+      featuredGrid.innerHTML = displayProducts
         .map((product) => CakeCatalog.buildProductCardHtml(product, { categoryAttr: false }))
         .join('');
     }
@@ -30,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
       ].join('');
     }
 
-    if (heroFeaturedCard && featuredProducts.length > 0) {
-      const heroProduct = featuredProducts[0];
+    if (heroFeaturedCard && displayProducts.length > 0) {
+      const heroProduct = displayProducts[0];
       heroFeaturedCard.innerHTML = `
         <img src="${CakeCatalog.getProductImage(heroProduct)}" alt="${heroProduct.name}" />
         <div class="featured-card-info">
