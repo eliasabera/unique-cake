@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Browse all cakes at Unique Cake House — birthday, wedding, graduation, anniversary, and custom cakes crafted fresh in Jimma." />
+    <meta name="description" content="Browse all cakes at Unique Cake House — wedding cakes, birthday cakes, cupcakes, and custom cakes crafted fresh in Jimma." />
     <title>Products - Unique Cake House</title>
 
     <!-- Google Fonts -->
@@ -79,189 +79,10 @@
             <div class="container">
 
                 <!-- Filter Bar -->
-                <div class="filter-bar reveal">
-                    <button class="filter-btn filter-active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="birthday">Birthday</button>
-                    <button class="filter-btn" data-filter="wedding">Wedding</button>
-                    <button class="filter-btn" data-filter="graduation">Graduation</button>
-                    <button class="filter-btn" data-filter="anniversary">Anniversary</button>
-                    <button class="filter-btn" data-filter="custom">Custom</button>
-                </div>
+                <div id="filter-bar" class="filter-bar reveal"></div>
 
                 <!-- Products Grid -->
-                <div class="products-grid reveal reveal-stagger">
-
-                    <!-- Product 1 -->
-                    <div class="cake-card" data-category="birthday">
-                        <div class="cake-image">
-                            <img src="images/cakes/images.jpg" alt="Chocolate Fudge Delight" />
-                            <span class="cake-badge">Bestseller</span>
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Chocolate Fudge Delight</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span>(48 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 1,500</p>
-                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Product 2 -->
-                    <div class="cake-card" data-category="wedding">
-                        <div class="cake-image">
-                            <img src="images/cakes/images1.jpg" alt="Elegant White Wedding" />
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Elegant White Wedding</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(32 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 2,500</p>
-                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="cake-card" data-category="graduation">
-                        <div class="cake-image">
-                            <img src="images/cakes/RIS02123.JPG" alt="Graduation Celebration" />
-                            <span class="cake-badge">New</span>
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Graduation Celebration</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(25 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 1,800</p>
-                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Product 4 -->
-                    <div class="cake-card" data-category="anniversary">
-                        <div class="cake-image">
-                            <img src="images/cakes/images (1).jpg" alt="Golden Anniversary" />
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Golden Anniversary</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(18 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 2,000</p>
-                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Product 5 -->
-                    <div class="cake-card" data-category="birthday">
-                        <div class="cake-image">
-                            <img src="images/cakes/unnamed.png" alt="Classic Vanilla Dream" />
-                            <span class="cake-badge">Popular</span>
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Classic Vanilla Dream</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span>(56 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 1,200</p>
-                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Product 6 -->
-                    <div class="cake-card" data-category="custom">
-                        <div class="cake-image">
-                            <img src="images/cakes/images (2).jpg" alt="Strawberry Rose Garden" />
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Strawberry Rose Garden</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(22 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 1,600</p>
-                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Product 7 -->
-                    <div class="cake-card" data-category="custom">
-                        <div class="cake-image">
-                            <img src="images/cakes/images (3).jpg" alt="Tropical Mango Bliss" />
-                            <span class="cake-badge">New</span>
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Tropical Mango Bliss</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span>(15 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 1,400</p>
-                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Product 8 -->
-                    <div class="cake-card" data-category="wedding">
-                        <div class="cake-image">
-                            <img src="images/cakes/images (4).jpg" alt="Royal Chocolate Tower" />
-                            <span class="cake-badge">Premium</span>
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Royal Chocolate Tower</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(40 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 3,500</p>
-                            <a href="contact.html" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Load More -->
-                <div class="section-footer">
-                    <a href="#" class="btn btn-secondary">Load More Cakes</a>
-                </div>
+                <div id="products-grid" class="products-grid reveal reveal-stagger"></div>
 
             </div>
         </section>
@@ -426,43 +247,11 @@
     ============================================================ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/products-page.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
-
-    <!-- Filter functionality -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const cards = document.querySelectorAll('.cake-card[data-category]');
-
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Update active button
-                    filterBtns.forEach(b => b.classList.remove('filter-active'));
-                    btn.classList.add('filter-active');
-
-                    const filter = btn.dataset.filter;
-
-                    cards.forEach(card => {
-                        if (filter === 'all' || card.dataset.category === filter) {
-                            card.style.display = '';
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(20px)';
-                            requestAnimationFrame(() => {
-                                card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-                                card.style.opacity = '1';
-                                card.style.transform = 'translateY(0)';
-                            });
-                        } else {
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(20px)';
-                            setTimeout(() => { card.style.display = 'none'; }, 300);
-                        }
-                    });
-                });
-            });
-        });
-    </script>
 
 </body>
 </html>

@@ -213,6 +213,13 @@
     margin-bottom: 6px;
 }
 
+.cake-category {
+    font-size: 13px;
+    color: var(--accent-caramel);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
 .cake-rating {
     display: flex;
     align-items: center;

@@ -227,6 +227,18 @@ ul {
     color: var(--text-dark);
 }
 
+.navbar .logo {
+    margin-right: 12px;
+}
+
+.navbar .logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+    transform: scale(1.5);
+    transform-origin: left center;
+}
+
 .logo img {
     height: 40px;
     width: auto;

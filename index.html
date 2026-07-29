@@ -81,12 +81,12 @@
                         <a href="about.html" class="btn btn-secondary">Our Story</a>
                     </div>
 
-                    <!-- Floating Featured Cake Card -->
-                    <div class="hero-featured-card">
-                        <img src="images/cakes/unnamed.png" alt="Featured Cake" />
+                    <!-- Populated by home-catalog.js -->
+                    <div id="hero-featured-card" class="hero-featured-card">
+                        <img src="images/cakes/images1.jpg" alt="Featured Cake" />
                         <div class="featured-card-info">
-                            <h4>Vanilla Dream</h4>
-                            <p class="price">ETB 1,200</p>
+                            <h4>Classic Vanilla Wedding Cake</h4>
+                            <p class="price">ETB 299.99</p>
                             <a href="products.html" class="btn-small">View</a>
                         </div>
                     </div>
@@ -114,89 +114,7 @@
                     </p>
                 </div>
 
-                <div class="cakes-grid reveal reveal-stagger">
-                    <!-- Cake Card 1 -->
-                    <div class="cake-card">
-                        <div class="cake-image">
-                            <img src="images/cakes/images.jpg" alt="Chocolate Fudge Cake" />
-                            <span class="cake-badge">Bestseller</span>
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Chocolate Fudge Delight</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span>(48 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 1,500</p>
-                            <a href="#" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Cake Card 2 -->
-                    <div class="cake-card">
-                        <div class="cake-image">
-                            <img src="images/cakes/images1.jpg" alt="Wedding Cake" />
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Elegant White Wedding</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(32 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 2,500</p>
-                            <a href="#" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Cake Card 3 -->
-                    <div class="cake-card">
-                        <div class="cake-image">
-                            <img src="images/cakes/RIS02123.JPG" alt="Graduation Cake" />
-                            <span class="cake-badge">New</span>
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Graduation Celebration</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(25 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 1,800</p>
-                            <a href="#" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Cake Card 4 -->
-                    <div class="cake-card">
-                        <div class="cake-image">
-                            <img src="images/cakes/images (1).jpg" alt="Anniversary Cake" />
-                        </div>
-                        <div class="cake-info">
-                            <h3 class="cake-name">Golden Anniversary</h3>
-                            <div class="cake-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(18 reviews)</span>
-                            </div>
-                            <p class="cake-price">ETB 2,000</p>
-                            <a href="#" class="btn btn-primary btn-sm">Order Now</a>
-                        </div>
-                    </div>
-                </div>
+                <div id="featured-products-grid" class="cakes-grid reveal reveal-stagger"></div>
 
                 <div class="section-footer">
                     <a href="products.html" class="btn btn-secondary">View All Cakes</a>
@@ -214,7 +132,7 @@
                     <h2 class="section-title">Browse by Category</h2>
                 </div>
 
-                <div class="categories-grid reveal reveal-stagger">
+                <div id="categories-grid" class="categories-grid reveal reveal-stagger">
                     <a href="products.html?category=birthday" class="category-card">
                         <div class="category-image" style="background-image: url('images/cakes/images\ \(2\).jpg');">
                             <div class="category-overlay">
@@ -642,6 +560,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <!-- Site Scripts (load after GSAP) -->
+    <script src="js/config.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/home-catalog.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
     
