@@ -373,37 +373,54 @@
 
     .pricing-grid {
         grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .flavors-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
     .cta-wrapper {
-        padding: 40px 24px;
+        padding: 36px 20px;
     }
 
     .cta-content h2 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
     }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
     .flavors-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .service-card {
-        padding: 28px 20px;
+        padding: 24px 18px;
     }
 
     .pricing-card {
-        padding: 30px 20px;
+        padding: 28px 18px;
     }
 
     .price-value {
-        font-size: 30px;
+        font-size: 28px;
+    }
+
+    .cta-content h2 {
+        font-size: 22px;
     }
 }

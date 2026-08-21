@@ -678,37 +678,63 @@
     .instagram-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .cakes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* --- Mobile --- */
 @media (max-width: 768px) {
     /* Hero */
     .hero {
-        padding: 100px 0 60px;
+        padding: 100px 0 48px;
         min-height: auto;
     }
 
     .hero-container {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 16px;
     }
 
     .hero-title {
-        font-size: 38px;
+        font-size: 36px;
     }
 
     .hero-featured-card {
         max-width: 100%;
+        width: 100%;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .hero-image {
+        order: -1;
     }
 
     .hero-image-wrapper {
-        max-width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
         border-radius: 100px 100px 50px 50px;
         aspect-ratio: 1 / 1;
     }
 
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
+        max-width: 320px;
     }
 
     .hero-buttons .btn {
@@ -719,43 +745,58 @@
     /* About */
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 28px;
+    }
+
+    .about-content {
+        text-align: center;
     }
 
     .about-image img {
-        min-height: 300px;
+        min-height: 260px;
+        width: 100%;
     }
 
     .about-stats {
-        gap: 20px;
+        gap: 16px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .stat-number {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     /* Categories */
     .categories-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .category-overlay h3 {
+        font-size: 16px;
     }
 
     /* Cakes Grid */
     .cakes-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
+        gap: 14px;
     }
 
     /* Features */
     .features-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
+        gap: 12px;
+    }
+
+    .feature-card {
+        padding: 22px 16px;
     }
 
     /* Testimonials */
     .testimonials-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
     }
 
     /* Instagram */
@@ -766,7 +807,7 @@
 
     /* Newsletter */
     .newsletter-wrapper {
-        padding: 40px 20px;
+        padding: 36px 18px;
     }
 
     .newsletter-form .form-group {
@@ -780,22 +821,56 @@
     .newsletter-form .btn {
         width: 100%;
     }
+
+    .section-footer {
+        margin-top: 28px;
+    }
 }
 
 /* --- Mobile Small --- */
 @media (max-width: 480px) {
+    .hero {
+        padding: 90px 0 40px;
+    }
+
     .hero-title {
-        font-size: 30px;
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .hero-image-wrapper {
+        max-width: 220px;
+    }
+
+    .hero-featured-card {
+        padding: 10px 14px 10px 10px;
+    }
+
+    .hero-featured-card img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .featured-card-info h4 {
+        font-size: 14px;
     }
 
     .cakes-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .categories-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 12px;
+    }
+
+    .category-image {
+        min-height: 160px;
     }
 
     .features-grid {
@@ -808,19 +883,31 @@
     }
 
     .cake-info {
-        padding: 14px 16px 18px;
+        padding: 16px 18px 20px;
     }
 
     .cake-name {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .cake-price {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .feature-card {
         padding: 24px 20px;
+    }
+
+    .testimonial-card {
+        padding: 24px 20px;
+    }
+
+    .about-stats {
+        gap: 12px;
+    }
+
+    .stat {
+        flex: 1 1 40%;
     }
 
     .about-image-badge {
